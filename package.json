@@ -1,5 +1,5 @@
 { "name": "ubborg-dpkg-divert-29-pmb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Limited but easy dpkg_divert for ansible 2.9 without galaxy collections.",
   "keywords": [],
 
@@ -16,15 +16,20 @@
 
   "config": { "for_details": "see npm-config2env-datatypes-demo" },
 
-  "private": true, "license": "ISC",
+  "private": false, "license": "ISC",
 
   "main": "divert.mjs",
   "scripts": { "test": "nodemjs test/all.mjs" },
   "directories": { "test": "test" },
 
-  "dependencies": {},
+  "dependencies": {
+    "is-string": "^1.0.4",
+    "objpop": "^0.2.1",
+    "typechecks-pmb": "^0.200620.4"
+  },
   "browser": {},
   "devDependencies": {
+    "nodemjs": "^0.1.8"
   },
   "optionalDependencies": {}, "peerDependencies": {}, "bundledDependencies": [],
   "browserify": { "transform": [ "brfs" ] },
